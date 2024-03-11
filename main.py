@@ -29,7 +29,7 @@ def run_quiz(questions):
         print(question["question"])
         for answer in question["answers"]:
             print(answer)
-        user_answer = input("Enter A, B, C or D: ")
+        user_answer = input("Enter A, B, C or D: ").upper()
         if user_answer == question["correct"]:
             score += 1
     print("You got " + str(score) + "/" + str(len(questions)) + " correct")
